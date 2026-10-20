@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Какая это достопримечательность?</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Какая это достопримечательность?</h1>
+  <p class="s">Загрузи фото или включи камеру, и модель определит: Китайская стена, Кремль, Лувр или пирамида Кукулькана.</p>
+  <div class="card">
+    <div class="view" id="view">Здесь появится фото</div>
+    <div class="btns">
+      <label class="b">Выбрать фото<input id="f" type="file" accept="image/*" hidden></label>
+      <button class="o" id="cam">Включить камеру</button>
+    </div>
+    <div id="res"></div>
+    <div id="st" role="status">Загружаю модель…</div>
+  </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.7.4/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.5/dist/teachablemachine-image.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
